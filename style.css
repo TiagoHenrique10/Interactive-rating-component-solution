@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Overpass' , sans-serif;
+    background:hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 25.625rem;
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(82, 82, 82, 0.61);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    max-width: 95%;
+}
+
+/* Estilizando primeiro card */
+
+h1 { 
+    color: hsl(0, 0%, 100%);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.start-card h1 {
+    margin: 30px 0 15px 0;
+}
+
+.description {
+    color: hsl(217, 12%, 63%);
+    font-size: 0.9375rem;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.image-star {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: hsla(217, 12%, 63%, 0.219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando os numeros */
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+li {
+    font-size: 16px;
+    font-weight: 700;
+    list-style: none;
+    height: 51px;
+    width: 51px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    background-color: hsla(217, 12%, 63%, 0.219);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+li.active {
+    background: #7c8798;
+    color: #fff;
+}
+ 
+li:hover {
+    background-color: #fc7614;
+    color: #fff;
+}
+
+/* Estilizando botão */
+
+.btn {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+    .btn:focus {
+    outline: none;
+  }
+  
+  .btn.btn02 {
+    background-image: linear-gradient(
+      to right,
+      #f5ce62,
+      #e43603,
+      #fa7199,
+      #e85a19
+    );
+    box-shadow: 0 4px 15px 0 rgba(229, 65, 10, 0.445);
+  }
+
+ /* Estilizando segundo card */ 
+
+  .end-card {
+    text-align: center;
+  }
+
+  .end-card img {
+    margin-top: 13px;
+  }
+
+  .description-end {
+    font-weight: 400;
+    color:hsl(25, 97%, 53%);
+    margin: 32px 0;
+    padding: 4px 20px;
+    background-color: #3b4c5fa2;
+    border-radius: 1.25rem;  
+  }
+
+  .end-card h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .text-end {
+    margin-bottom: 1.25rem;
+    color: hsl(217, 12%, 63%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+/* Adicionando animação */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+ /* Estilizando versão mobile */
+
+ @media (max-width: 390px) {
+    h1 {
+      font-size: 1.5rem;
+  }
+    p {
+      font-size: 0.875rem;
+    }
+    li {
+      height: 2.625rem;
+      width: 2.625rem;
+      font-size: 0.875rem;
+    }
+ }
