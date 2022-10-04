@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive rating component
 
-![link preview for the Interactive rating component](https://tiagohenrique10.github.io/Interactive-rating-component-solution/)
+https://tiagohenrique10.github.io/Interactive-rating-component-solution/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
