@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive rating component
 
-![Design preview for the Interactive rating component coding challenge](./design/desktop-design.jpg)
+![link preview for the Interactive rating component](https://tiagohenrique10.github.io/Interactive-rating-component-solution/)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
